@@ -28,7 +28,6 @@ function binarySearch(arr, target) {
  * chack if its found or not
  *
  * @param {number} index
- * @returns {string}
  */
 
 function verify(index) {
