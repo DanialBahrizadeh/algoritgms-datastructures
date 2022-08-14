@@ -16,3 +16,8 @@ Big o: theoretical defintion of the complexity of an algorithm as a function of 
     Linear: O(n)
     quadratic: O(n ^ 2)
     exponential: O(2 ^ n)
+operations on data structures:
+    Acces and read values
+    Search for an arbiray values
+    insert values at any point into the structure
+    Delete values in the structure
