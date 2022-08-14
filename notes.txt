@@ -1,0 +1,18 @@
+algoritgms are steps to make an task
+for algoritgms thinking you should be clear of the problem and results you need for example if you need to gusse an number is between 1 to 10 
+one of the things that you could do is ask is 1 and 10 count or not of its not so you already remove two numbers 
+Linear Search: its searching for each item in the list and cheack if it's the one we need 
+algoritgms search: its the way that we use some steps to find the item that we need much faster and better
+
+some notes about algorithm:
+    clearly defined problem statement, input and output 
+    The steps in the algorithm need to be in a bery specific order
+    The steps also need to be distinct
+    the algorithm should produce a result
+    The algorithm should complete in a finite amount of time
+Big o: theoretical defintion of the complexity of an algorithm as a function of the size
+    constant: O(1)
+    logarithmic: O(log n)
+    Linear: O(n)
+    quadratic: O(n ^ 2)
+    exponential: O(2 ^ n)
