@@ -9,7 +9,7 @@ class Node {
   }
 }
 
-class LinkedList {
+export class LinkedList {
   constructor() {
     this.head = undefined;
   }
@@ -137,31 +137,43 @@ class LinkedList {
 
     return position;
   }
+
+  findByIndex(index) {
+    if (index === 0) return this.head;
+    let current = this.head;
+    let position = 0;
+
+    while (position < index) {
+      current = current.nextNode;
+      position++;
+    }
+    return current;
+  }
 }
 
-let l = new LinkedList();
+// let l = new LinkedList();
 
-l.add(1);
-l.add(2);
-l.add(3);
-l.add("Danial");
-l.add("Mostafa");
-l.add("Ali");
-console.log(l.show());
-console.log("###".repeat(10));
-console.log(l.isEmpty());
-console.log("###".repeat(10));
-console.log(l.size());
-console.log("###".repeat(10));
-console.log(l.search("Danial"));
-console.log("###".repeat(10));
-l.insert(4, 3);
-console.log(l.show());
-console.log("###".repeat(10));
-console.log(l.removeByKey("Ali"));
-console.log(l.show());
-console.log("###".repeat(10));
-console.log(l.indexOf(4));
-console.log("###".repeat(10));
-console.log(l.removeByIndex(2));
-console.log(l.show());
+// l.add(1);
+// l.add(2);
+// l.add(3);
+// l.add("Danial");
+// l.add("Mostafa");
+// l.add("Ali");
+// console.log(l.show());
+// console.log("###".repeat(10));
+// console.log(l.isEmpty());
+// console.log("###".repeat(10));
+// console.log(l.size());
+// console.log("###".repeat(10));
+// console.log(l.search("Danial"));
+// console.log("###".repeat(10));
+// l.insert(4, 3);
+// console.log(l.show());
+// console.log("###".repeat(10));
+// console.log(l.removeByKey("Ali"));
+// console.log(l.show());
+// console.log("###".repeat(10));
+// console.log(l.indexOf(4));
+// console.log("###".repeat(10));
+// console.log(l.removeByIndex(2));
+// console.log(l.show());

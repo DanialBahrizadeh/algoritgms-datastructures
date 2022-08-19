@@ -131,3 +131,15 @@ class Linked_List:
                 prev_node = current
                 current = current.next_node
         return current
+
+    def node_at_index(self, index):
+        if index == 0:
+            return self.head
+        current = self.head
+        position = 0
+
+        while position < index:
+            current = current.next_node
+            position += 1
+
+        return current
