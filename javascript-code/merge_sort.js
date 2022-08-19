@@ -1,3 +1,4 @@
+import { performance } from "perf_hooks";
 function mergeSort(arr) {
   if (arr.length <= 1) return arr;
   let [leftHalf, rightHalf] = spilt(arr);
@@ -34,12 +35,12 @@ function merge(left, right) {
   }
   return l;
 }
-function verifySort(arr) {
-  n = arr.length;
-  if (n <= 1) return true;
 
-  return arr[0] < arr[1] && verifySort(arr.slice(1));
+const unSortedArray = [];
+for (let i = 0; i < 10000; i++) {
+  unSortedArray.push(Math.floor(Math.random() * 10000));
 }
-const unSortedArray = [54, 35, 40, 50, 23, 14, 31, 22, 95, 78];
+let perf = performance.now();
 const sortedArray = mergeSort(unSortedArray);
-console.log(sortedArray, `and the array is sorted ${verifySort(sortedArray)}`);
+console.log(performance.now() - perf);
+console.log(sortedArray);
